@@ -1,0 +1,31 @@
+.footer {
+    padding: 12px 0;
+    color: var(--color-white);
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer__copy {
+    display: none;
+}
+
+.blagovist {
+    & .footer {
+        background-color: var(--color-blue);
+    }
+
+    .footer__copy--blagovist {
+        display: block;
+    }
+}
+
+
+.park-lane {
+    & .footer {
+        background-color: var(--color-purple);
+    }
+
+    .footer__copy--park-lane {
+        display: block;
+    }
+}

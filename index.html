@@ -1,13 +1,134 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Objects</title>
+</head>
+<body class="blagovist">
+<!--<body class="park-lane">-->
+<!-- HEADER start -->
+<header class="header">
+    <div class="wrapper header__wrapper">
+        <img src="/logo-park-lane.svg" alt="ParkLane" class="header__logo header__logo--park-lane">
+        <img src="/logo-blagovist.svg" alt="Blagovist" class="header__logo header__logo--blagovist">
+    </div>
+</header>
+<!-- HEADER end -->
+
+<!-- MAIN start -->
+<main class="main">
+    <div class="wrapper main__wrapper">
+        <!-- REALTOR start -->
+        <div class="realtor">
+            <img src="/example-realtor.jpg" alt="Авдалов Герман Вікторович" class="realtor__photo">
+            <div class="realtor__info">
+                <span class="realtor__name">Авдалов Герман Вікторович</span>
+                <a href="tel:+380669212125" class="realtor__phone">066 921 21 25</a>
+            </div>
+        </div>
+        <!-- REALTOR end -->
+
+        <!-- OBJECTS start -->
+        <div class="objects">
+            <ul class="objects__list">
+                <li class="objects__item">
+                    <a href="/object/index.html" class="objects__cover-holder">
+                        <img src="/example-object-cover.jpg" alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ" class="objects__cover">
+                        <span class="objects__id">G-1958744</span>
+                        <span class="objects__price">2 141 000 грн</span>
+                    </a>
+                    <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
+                    <span class="objects__area">Лісовий, Деснянський район</span>
+                    <div class="objects__indicators">
+                        <div class="objects__indicator">
+                            <span class="objects__indicator-value">2</span>
+                            <span class="objects__indicator-title">кімнат</span>
+                        </div>
+                        <div class="objects__indicator">
+                            <span class="objects__indicator-value">64м<sup>2</sup></span>
+                            <span class="objects__indicator-title">площа</span>
+                        </div>
+                        <div class="objects__indicator">
+                            <span class="objects__indicator-value">10/10</span>
+                            <span class="objects__indicator-title">поверх</span>
+                        </div>
+                    </div>
+                    <div class="objects__actions">
+                        <button class="objects__action" type="button">подобається</button>
+                        <button class="objects__action objects__action--dislike" type="button">не подобається</button>
+                    </div>
+                </li>
+                <li class="objects__item objects__item--dislike">
+                    <a href="/object/index.html" class="objects__cover-holder">
+                        <img src="/example-object-cover.jpg" alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ" class="objects__cover">
+                        <span class="objects__id">G-1958744</span>
+                        <span class="objects__price">2 141 000 грн</span>
+                    </a>
+                    <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
+                    <span class="objects__area">Лісовий, Деснянський район</span>
+                    <div class="objects__indicators">
+                        <div class="objects__indicator">
+                            <span class="objects__indicator-value">2</span>
+                            <span class="objects__indicator-title">кімнат</span>
+                        </div>
+                        <div class="objects__indicator">
+                            <span class="objects__indicator-value">64м<sup>2</sup></span>
+                            <span class="objects__indicator-title">площа</span>
+                        </div>
+                        <div class="objects__indicator">
+                            <span class="objects__indicator-value">10/10</span>
+                            <span class="objects__indicator-title">поверх</span>
+                        </div>
+                    </div>
+                    <div class="objects__actions">
+                        <button class="objects__action" type="button">подобається</button>
+                        <button class="objects__action objects__action--dislike" type="button">не подобається</button>
+                    </div>
+                </li>
+                <li class="objects__item">
+                    <a href="/object/index.html" class="objects__cover-holder">
+                        <img src="/example-object-cover.jpg" alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ" class="objects__cover">
+                        <span class="objects__id">G-1958744</span>
+                        <span class="objects__price">2 141 000 грн</span>
+                    </a>
+                    <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
+                    <span class="objects__area">Лісовий, Деснянський район</span>
+                    <div class="objects__indicators">
+                        <div class="objects__indicator">
+                            <span class="objects__indicator-value">2</span>
+                            <span class="objects__indicator-title">кімнат</span>
+                        </div>
+                        <div class="objects__indicator">
+                            <span class="objects__indicator-value">64м<sup>2</sup></span>
+                            <span class="objects__indicator-title">площа</span>
+                        </div>
+                        <div class="objects__indicator">
+                            <span class="objects__indicator-value">10/10</span>
+                            <span class="objects__indicator-title">поверх</span>
+                        </div>
+                    </div>
+                    <div class="objects__actions">
+                        <button class="objects__action" type="button">подобається</button>
+                        <button class="objects__action objects__action--dislike" type="button">не подобається</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- OBJECTS end -->
+    </div>
+</main>
+<!-- MAIN end -->
+
+<!-- FOOTER start -->
+<footer class="footer">
+    <div class="wrapper footer__wrapper">
+        <p class="footer__copy footer__copy--park-lane">Агентство нерухомості Park Lane © 2006-2023</p>
+        <p class="footer__copy footer__copy--blagovist">© Агентство нерухомості «БЛАГОВІСТ», 1993—2023</p>
+    </div>
+</footer>
+<!-- FOOTER end -->
+<script type="module" src="/main.js"></script>
+</body>
 </html>

@@ -1,0 +1,46 @@
+.realtor {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.realtor--object {
+    margin-bottom: 32px;
+}
+
+.realtor__photo {
+    flex-shrink: 0;
+    width: 90px;
+    height: auto;
+    border-radius: 5px;
+
+    @media (min-width: 768px) {
+        width: 120px;
+    }
+}
+
+.realtor__name {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.blagovist {
+    & .realtor__name {
+        color: var(--color-blue);
+        font-size: 24px;
+    }
+}
+
+.park-lane {
+    & .realtor__name {
+        color: var(--color-purple);
+        font-size: 22px;
+    }
+}
+
+.realtor__phone {
+    display: inline-flex;
+    text-decoration: none;
+    color: var(--color-black);
+}

@@ -1,0 +1,9 @@
+:root {
+	--color-transparent: rgba(0, 0, 0, 0);
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-purple: #97004e;
+    --color-purple-dark: #690036;
+    --color-blue: #1b3b78;
+    --color-grey: #6a7379;
+}

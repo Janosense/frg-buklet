@@ -1,0 +1,31 @@
+.header {
+    padding: 16px 0;
+}
+
+.header__logo {
+    display: none;
+    height: auto;
+}
+
+.blagovist {
+    & .header {
+        background-color: var(--color-blue);
+    }
+
+    & .header__logo--blagovist {
+        display: block;
+        width: 180px;
+    }
+}
+
+
+.park-lane {
+    & .header {
+        background-color: var(--color-purple);
+    }
+
+    & .header__logo--park-lane {
+        display: block;
+        width: 200px;
+    }
+}
