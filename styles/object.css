@@ -1,11 +1,31 @@
-.object {
+.object__screen {
+    margin-bottom: 40px;
+}
 
+.object__layout {
+    margin-bottom: 24px;
+
+    @media (min-width: 1024px) {
+        margin-bottom: 0;
+    }
+}
+
+.object__layout:last-child {
+    margin-bottom: 0;
+}
+
+.object__screen--first {
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+        align-items: flex-start;
+    }
 }
 
 .object__cover-holder {
     position: relative;
     display: block;
-    margin-bottom: 24px;
 
     @media (min-width: 1024px) {
         margin-bottom: 0;
@@ -19,17 +39,6 @@
     border-radius: 5px;
 }
 
-.object__layout {
-    margin-bottom: 32px;
-
-    @media (min-width: 1024px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 32px;
-        align-items: flex-start;
-    }
-}
-
 .object__id {
     position: absolute;
     left: 0;
@@ -39,6 +48,52 @@
     font-size: 16px;
     color: var(--color-white);
     border-radius: 0 5px 5px 0;
+}
+
+.object__tours {
+    display: flex;
+    column-gap: 16px;
+    padding-top: 16px;
+}
+
+.object__tours .object__tour-button {
+    margin-bottom: 0;
+}
+
+.object__tour-button {
+    -webkit-appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    width: 140px;
+    height: auto;
+    margin: 0 0 16px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    @media (min-width: 768px) {
+        width: 180px;
+    }
+}
+
+.object__tour-button::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid var(--color-white);
 }
 
 .object__group {
@@ -55,47 +110,41 @@
 .object__complex {
     display: block;
     margin-bottom: 24px;
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .object__indicators {
-    display: flex;
-    align-items: flex-start;
-    column-gap: 12px;
     margin-bottom: 24px;
 }
 
-.object__indicator {
-    padding-right: 12px;
-    text-align: center;
-    border-right: 1px solid #bdbdbd;
-}
-
-.object__indicator:last-child {
-    padding-right: 0;
-    border-right: none;
-}
-
-.object__indicator-value {
-    display: block;
-    margin-bottom: 4px;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.object__indicator-value sup {
-    font-size: 10px;
-}
-
-.object__indicator-title {
-    font-size: 17px;
-    color: var(--color-grey);
-}
-
 .object__price {
+    position: relative;
     margin-bottom: 32px;
     font-size: 26px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.object__price--active .object__price-dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+.object__price-dropdown {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1.3;
+    color: var(--color-grey);
+    background-color: var(--color-white);
+    opacity: 0;
 }
 
 .object__unit-price {
@@ -103,17 +152,16 @@
     font-weight: normal;
 }
 
-.object__images,
-.object__description {
-    margin-bottom: 32px;
+.object__price-dropdown .object__unit-price {
+    font-size: 18px;
 }
 
-.object__description-text {
+.object__description {
     color: var(--color-grey);
     line-height: 1.3;
 }
 
-.object__description-text p {
+.object__description p {
     margin: 0 0 12px;
 }
 
@@ -123,6 +171,15 @@
     margin: 0 0 16px;
     font-size: 22px;
     font-weight: bold;
+    line-height: 1;
+}
+
+.object__sub-title-icon {
+    display: none;
+    vertical-align: bottom;
+    width: 32px;
+    height: auto;
+    margin-right: 6px;
 }
 
 .object__images {
@@ -162,9 +219,18 @@
         background-color: var(--color-blue);
     }
 
+    .object__tour-button {
+        background-color: var(--color-blue);
+    }
+
+    .object__complex,
     .object__sub-title,
     .object__price {
         color: var(--color-blue);
+    }
+
+    .object__sub-title-icon--blagovist {
+        display: inline-flex;
     }
 }
 
@@ -174,8 +240,17 @@
         background-color: var(--color-purple);
     }
 
+    .object__tour-button {
+        background-color: var(--color-purple);
+    }
+
+    .object__complex,
     .object__sub-title,
     .object__price {
         color: var(--color-purple);
+    }
+
+    .object__sub-title-icon--park-lane {
+        display: inline-flex;
     }
 }

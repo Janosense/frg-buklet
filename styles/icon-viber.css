@@ -1,0 +1,20 @@
+.blagovist {
+    & .icon-viber__fill {
+        fill: var(--color-blue);
+    }
+
+    & .icon-viber__stroke {
+        stroke: var(--color-blue);
+    }
+}
+
+
+.park-lane {
+    & .icon-viber__fill {
+        fill: var(--color-purple);
+    }
+
+    & .icon-viber__stroke {
+        stroke: var(--color-purple);
+    }
+}

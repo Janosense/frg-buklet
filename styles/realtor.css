@@ -10,37 +10,70 @@
 
 .realtor__photo {
     flex-shrink: 0;
-    width: 90px;
+    width: 98px;
     height: auto;
     border-radius: 5px;
-
-    @media (min-width: 768px) {
-        width: 120px;
-    }
 }
 
 .realtor__name {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     font-weight: bold;
 }
+
+.realtor__phone {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.realtor__phone:last-child {
+    margin-bottom: 0;
+}
+
+.realtor__email {
+    text-decoration: none;
+    color: var(--color-grey);
+}
+
+.realtor__info-row {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-bottom: 8px;
+}
+
+.realtor__info-row .realtor__phone {
+    margin-bottom: 0;
+}
+
+.realtor__info-row:nth-child(2) {
+    margin-bottom: 2px;
+}
+
+.realtor__info-row:last-child {
+    margin-bottom: 0;
+}
+
+.realtor__messenger-icon {
+    display: block;
+    width: 28px;
+    height: auto;
+}
+
 
 .blagovist {
     & .realtor__name {
         color: var(--color-blue);
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
 .park-lane {
     & .realtor__name {
         color: var(--color-purple);
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
-.realtor__phone {
-    display: inline-flex;
-    text-decoration: none;
-    color: var(--color-black);
-}

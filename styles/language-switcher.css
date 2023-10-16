@@ -1,0 +1,89 @@
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 28px;
+        right: 176px;
+    }
+}
+
+.language-switcher--active .language-switcher__list {
+    display: block;
+}
+
+.language-switcher__current {
+    padding: 6px 12px;
+}
+
+.language-switcher__current strong {
+    font-weight: bold;
+}
+
+.language-switcher__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    background-color: var(--color-white);
+}
+
+.language-switcher__item {
+    margin-bottom: 8px;
+    text-align: right;
+}
+
+.language-switcher__item:last-child {
+    margin-bottom: 0;
+}
+
+.language-switcher__link {
+    text-decoration: none;
+}
+
+.blagovist {
+    & .language-switcher {
+        @media (min-width: 768px) {
+            top: 20px;
+        }
+    }
+
+
+    & .language-switcher__current {
+        background-color: var(--color-blue);
+    }
+
+    & .language-switcher__link {
+        color: var(--color-blue);
+    }
+}
+
+
+.park-lane {
+
+    & .language-switcher {
+        @media (min-width: 768px) {
+            top: 28px;
+        }
+    }
+
+    & .language-switcher__current {
+        background-color: var(--color-purple);
+    }
+
+    & .language-switcher__link {
+        color: var(--color-purple);
+    }
+}

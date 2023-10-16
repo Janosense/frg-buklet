@@ -1,0 +1,19 @@
+.sharing {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.sharing__icon {
+    display: block;
+    width: 32px;
+    height: auto;
+}
+
+.sharing__icon--telegram {
+    border-radius: 50%;
+    border: 0.5px solid #ffffff;    font-family: 'icomoon';
+}

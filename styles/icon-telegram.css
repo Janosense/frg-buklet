@@ -1,0 +1,21 @@
+.icon-telegram {
+    width: 29px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.blagovist {
+    & .icon-telegram {
+        fill: var(--color-blue);
+        border-color: var(--color-blue);
+    }
+}
+
+
+.park-lane {
+    & .icon-telegram {
+        fill: var(--color-purple);
+        border-color: var(--color-purple);
+    }
+}

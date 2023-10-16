@@ -1,0 +1,66 @@
+.indicators {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 12px;
+}
+
+.indicators__item {
+    padding-right: 12px;
+    /*text-align: center;*/
+    border-right: 1px solid #bdbdbd;
+}
+
+.indicators__item:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.indicators__value {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.indicators__value::before {
+    display: inline-flex;
+    font-family: 'icomoon', sans-serif;
+    font-size: 26px;
+    line-height: 1;
+}
+
+.indicators__value--rooms::before {
+    content: '\e90a';
+}
+
+.indicators__value--square::before {
+    content: '\e90c';
+}
+
+.indicators__value--floor::before {
+    content: '\e91d';
+}
+
+.indicators__value sup {
+    font-size: 10px;
+}
+
+.indicators__title {
+    font-size: 15px;
+    color: var(--color-grey);
+}
+
+.blagovist {
+    & .indicators__value::before {
+        color: var(--color-blue);
+    }
+}
+
+
+.park-lane {
+    & .indicators__value::before {
+        color: var(--color-purple);
+    }
+}

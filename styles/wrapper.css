@@ -1,12 +1,17 @@
 .wrapper {
     display: block;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1920px;
     margin: auto;
-    padding: 0 24px;
+    padding: 0 20px;
     box-sizing: border-box;
+
 
     @media (min-width: 768px) {
         padding: 0 40px;
     }
+}
+
+.wrapper--object {
+    max-width: 1200px;
 }

@@ -1,5 +1,12 @@
 .header {
+    position: relative;
     padding: 16px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo {
@@ -14,7 +21,7 @@
 
     & .header__logo--blagovist {
         display: block;
-        width: 180px;
+        width: 160px;
     }
 }
 
@@ -26,6 +33,6 @@
 
     & .header__logo--park-lane {
         display: block;
-        width: 200px;
+        width: 180px;
     }
 }
