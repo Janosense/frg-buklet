@@ -61,7 +61,8 @@
                 <span class="realtor__name">Авдалов Герман</span>
                 <div class="realtor__info-row">
                     <a href="tel:+380669212125" class="realtor__phone">066 921 21 25</a>
-                    <a href="#" class="realtor__messenger">
+                    <!-- IMPORTANT! Use '%2B' instead of '+' -->
+                    <a href="viber://chat?number=%2B380669212125" class="realtor__messenger">
                         <svg viewBox="0 0 72.214497 76.209872" class="realtor__messenger-icon icon-viber">
                             <g transform="translate(-429.26705,-345.04681)">
                                 <g>
@@ -84,7 +85,7 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="#" class="realtor__messenger">
+                    <a href="https://t.me/+380660864602" class="realtor__messenger">
                         <svg viewBox="0 0 560.76 560.76" class="realtor__messenger-icon icon-telegram">
                             <g>
                                 <path
@@ -112,355 +113,371 @@
         <div class="objects">
             <ul class="objects__list">
                 <li class="objects__item">
-                    <a href="/object/index.html" class="objects__cover-holder">
-                        <img src="/example-object-cover.jpg"
-                             alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
-                             class="objects__cover">
-                        <span class="objects__id">G-1958744</span>
-                        <span class="objects__price">2 141 000 грн</span>
-                    </a>
-                    <div class="objects__group">
-                        <span>Продаж</span> | <span>Квартира</span>
-                    </div>
-                    <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
-                    <span class="objects__area">Лісовий, Деснянський район</span>
-                    <!-- INDICATORS start -->
-                    <div class="indicators objects__indicators">
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--rooms">2</span>
-                            <span class="indicators__title">Кімн.</span>
+                    <div class="objects__layout">
+                        <a href="/object/index.html" class="objects__cover-holder">
+                            <img src="/example-object-cover.jpg"
+                                 alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
+                                 class="objects__cover">
+                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__price">2 141 000 грн</span>
+                        </a>
+                        <div class="objects__group">
+                            <span>Продаж</span> | <span>Квартира</span>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--square">64 кв.м.</span>
-                            <span class="indicators__title">Площа</span>
+                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
+                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <!-- INDICATORS start -->
+                        <div class="indicators objects__indicators">
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--rooms">2</span>
+                                <span class="indicators__title">Кімн.</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--square">64 кв.м.</span>
+                                <span class="indicators__title">Площа</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--floor">10/10</span>
+                                <span class="indicators__title">Поверх</span>
+                            </div>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--floor">10/10</span>
-                            <span class="indicators__title">Поверх</span>
+                        <!-- INDICATORS end -->
+                        <div class="objects__actions">
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                подобається
+                            </button>
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                не подобається
+                            </button>
                         </div>
-                    </div>
-                    <!-- INDICATORS end -->
-                    <div class="objects__actions">
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            подобається
-                        </button>
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            не подобається
-                        </button>
                     </div>
                 </li>
                 <li class="objects__item">
-                    <a href="/object/index.html" class="objects__cover-holder">
-                        <img src="/example-object-cover.jpg"
-                             alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
-                             class="objects__cover">
-                        <span class="objects__id">G-1958744</span>
-                        <span class="objects__price">2 141 000 грн</span>
-                    </a>
-                    <div class="objects__group">
-                        <span>Продаж</span> | <span>Квартира</span>
-                    </div>
-                    <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
-                    <span class="objects__area">Лісовий, Деснянський район</span>
-                    <!-- INDICATORS start -->
-                    <div class="indicators objects__indicators">
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--rooms">2</span>
-                            <span class="indicators__title">Кімн.</span>
+                    <div class="objects__layout">
+                        <a href="/object/index.html" class="objects__cover-holder">
+                            <img src="/example-object-cover.jpg"
+                                 alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
+                                 class="objects__cover">
+                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__price">2 141 000 грн</span>
+                        </a>
+                        <div class="objects__group">
+                            <span>Продаж</span> | <span>Квартира</span>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--square">64 кв.м.</span>
-                            <span class="indicators__title">Площа</span>
+                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
+                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <!-- INDICATORS start -->
+                        <div class="indicators objects__indicators">
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--rooms">2</span>
+                                <span class="indicators__title">Кімн.</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--square">64 кв.м.</span>
+                                <span class="indicators__title">Площа</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--floor">10/10</span>
+                                <span class="indicators__title">Поверх</span>
+                            </div>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--floor">10/10</span>
-                            <span class="indicators__title">Поверх</span>
+                        <!-- INDICATORS end -->
+                        <div class="objects__actions">
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                подобається
+                            </button>
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                не подобається
+                            </button>
                         </div>
-                    </div>
-                    <!-- INDICATORS end -->
-                    <div class="objects__actions">
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            подобається
-                        </button>
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            не подобається
-                        </button>
                     </div>
                 </li>
                 <li class="objects__item">
-                    <a href="/object/index.html" class="objects__cover-holder">
-                        <img src="/example-object-cover.jpg"
-                             alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
-                             class="objects__cover">
-                        <span class="objects__id">G-1958744</span>
-                        <span class="objects__price">2 141 000 грн</span>
-                    </a>
-                    <div class="objects__group">
-                        <span>Продаж</span> | <span>Квартира</span>
-                    </div>
-                    <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
-                    <span class="objects__area">Лісовий, Деснянський район</span>
-                    <!-- INDICATORS start -->
-                    <div class="indicators objects__indicators">
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--rooms">2</span>
-                            <span class="indicators__title">Кімн.</span>
+                    <div class="objects__layout">
+                        <a href="/object/index.html" class="objects__cover-holder">
+                            <img src="/example-object-cover.jpg"
+                                 alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
+                                 class="objects__cover">
+                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__price">2 141 000 грн</span>
+                        </a>
+                        <div class="objects__group">
+                            <span>Продаж</span> | <span>Квартира</span>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--square">64 кв.м.</span>
-                            <span class="indicators__title">Площа</span>
+                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
+                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <!-- INDICATORS start -->
+                        <div class="indicators objects__indicators">
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--rooms">2</span>
+                                <span class="indicators__title">Кімн.</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--square">64 кв.м.</span>
+                                <span class="indicators__title">Площа</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--floor">10/10</span>
+                                <span class="indicators__title">Поверх</span>
+                            </div>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--floor">10/10</span>
-                            <span class="indicators__title">Поверх</span>
+                        <!-- INDICATORS end -->
+                        <div class="objects__actions">
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                подобається
+                            </button>
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                не подобається
+                            </button>
                         </div>
-                    </div>
-                    <!-- INDICATORS end -->
-                    <div class="objects__actions">
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            подобається
-                        </button>
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            не подобається
-                        </button>
                     </div>
                 </li>
                 <li class="objects__item">
-                    <a href="/object/index.html" class="objects__cover-holder">
-                        <img src="/example-object-cover.jpg"
-                             alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
-                             class="objects__cover">
-                        <span class="objects__id">G-1958744</span>
-                        <span class="objects__price">2 141 000 грн</span>
-                    </a>
-                    <div class="objects__group">
-                        <span>Продаж</span> | <span>Квартира</span>
-                    </div>
-                    <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
-                    <span class="objects__area">Лісовий, Деснянський район</span>
-                    <!-- INDICATORS start -->
-                    <div class="indicators objects__indicators">
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--rooms">2</span>
-                            <span class="indicators__title">Кімн.</span>
+                    <div class="objects__layout">
+                        <a href="/object/index.html" class="objects__cover-holder">
+                            <img src="/example-object-cover.jpg"
+                                 alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
+                                 class="objects__cover">
+                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__price">2 141 000 грн</span>
+                        </a>
+                        <div class="objects__group">
+                            <span>Продаж</span> | <span>Квартира</span>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--square">64 кв.м.</span>
-                            <span class="indicators__title">Площа</span>
+                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
+                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <!-- INDICATORS start -->
+                        <div class="indicators objects__indicators">
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--rooms">2</span>
+                                <span class="indicators__title">Кімн.</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--square">64 кв.м.</span>
+                                <span class="indicators__title">Площа</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--floor">10/10</span>
+                                <span class="indicators__title">Поверх</span>
+                            </div>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--floor">10/10</span>
-                            <span class="indicators__title">Поверх</span>
+                        <!-- INDICATORS end -->
+                        <div class="objects__actions">
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                подобається
+                            </button>
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                не подобається
+                            </button>
                         </div>
-                    </div>
-                    <!-- INDICATORS end -->
-                    <div class="objects__actions">
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            подобається
-                        </button>
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            не подобається
-                        </button>
                     </div>
                 </li>
                 <li class="objects__item">
-                    <a href="/object/index.html" class="objects__cover-holder">
-                        <img src="/example-object-cover.jpg"
-                             alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
-                             class="objects__cover">
-                        <span class="objects__id">G-1958744</span>
-                        <span class="objects__price">2 141 000 грн</span>
-                    </a>
-                    <div class="objects__group">
-                        <span>Продаж</span> | <span>Квартира</span>
-                    </div>
-                    <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
-                    <span class="objects__area">Лісовий, Деснянський район</span>
-                    <!-- INDICATORS start -->
-                    <div class="indicators objects__indicators">
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--rooms">2</span>
-                            <span class="indicators__title">Кімн.</span>
+                    <div class="objects__layout">
+                        <a href="/object/index.html" class="objects__cover-holder">
+                            <img src="/example-object-cover.jpg"
+                                 alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
+                                 class="objects__cover">
+                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__price">2 141 000 грн</span>
+                        </a>
+                        <div class="objects__group">
+                            <span>Продаж</span> | <span>Квартира</span>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--square">64 кв.м.</span>
-                            <span class="indicators__title">Площа</span>
+                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
+                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <!-- INDICATORS start -->
+                        <div class="indicators objects__indicators">
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--rooms">2</span>
+                                <span class="indicators__title">Кімн.</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--square">64 кв.м.</span>
+                                <span class="indicators__title">Площа</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--floor">10/10</span>
+                                <span class="indicators__title">Поверх</span>
+                            </div>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--floor">10/10</span>
-                            <span class="indicators__title">Поверх</span>
+                        <!-- INDICATORS end -->
+                        <div class="objects__actions">
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                подобається
+                            </button>
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                не подобається
+                            </button>
                         </div>
-                    </div>
-                    <!-- INDICATORS end -->
-                    <div class="objects__actions">
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            подобається
-                        </button>
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            не подобається
-                        </button>
                     </div>
                 </li>
                 <li class="objects__item">
-                    <a href="/object/index.html" class="objects__cover-holder">
-                        <img src="/example-object-cover.jpg"
-                             alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
-                             class="objects__cover">
-                        <span class="objects__id">G-1958744</span>
-                        <span class="objects__price">2 141 000 грн</span>
-                    </a>
-                    <div class="objects__group">
-                        <span>Продаж</span> | <span>Квартира</span>
-                    </div>
-                    <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
-                    <span class="objects__area">Лісовий, Деснянський район</span>
-                    <!-- INDICATORS start -->
-                    <div class="indicators objects__indicators">
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--rooms">2</span>
-                            <span class="indicators__title">Кімн.</span>
+                    <div class="objects__layout">
+                        <a href="/object/index.html" class="objects__cover-holder">
+                            <img src="/example-object-cover.jpg"
+                                 alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
+                                 class="objects__cover">
+                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__price">2 141 000 грн</span>
+                        </a>
+                        <div class="objects__group">
+                            <span>Продаж</span> | <span>Квартира</span>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--square">64 кв.м.</span>
-                            <span class="indicators__title">Площа</span>
+                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
+                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <!-- INDICATORS start -->
+                        <div class="indicators objects__indicators">
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--rooms">2</span>
+                                <span class="indicators__title">Кімн.</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--square">64 кв.м.</span>
+                                <span class="indicators__title">Площа</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--floor">10/10</span>
+                                <span class="indicators__title">Поверх</span>
+                            </div>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--floor">10/10</span>
-                            <span class="indicators__title">Поверх</span>
+                        <!-- INDICATORS end -->
+                        <div class="objects__actions">
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                подобається
+                            </button>
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                не подобається
+                            </button>
                         </div>
-                    </div>
-                    <!-- INDICATORS end -->
-                    <div class="objects__actions">
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            подобається
-                        </button>
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            не подобається
-                        </button>
                     </div>
                 </li>
                 <li class="objects__item">
-                    <a href="/object/index.html" class="objects__cover-holder">
-                        <img src="/example-object-cover.jpg"
-                             alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
-                             class="objects__cover">
-                        <span class="objects__id">G-1958744</span>
-                        <span class="objects__price">2 141 000 грн</span>
-                    </a>
-                    <div class="objects__group">
-                        <span>Продаж</span> | <span>Квартира</span>
-                    </div>
-                    <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
-                    <span class="objects__area">Лісовий, Деснянський район</span>
-                    <!-- INDICATORS start -->
-                    <div class="indicators objects__indicators">
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--rooms">2</span>
-                            <span class="indicators__title">Кімн.</span>
+                    <div class="objects__layout">
+                        <a href="/object/index.html" class="objects__cover-holder">
+                            <img src="/example-object-cover.jpg"
+                                 alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
+                                 class="objects__cover">
+                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__price">2 141 000 грн</span>
+                        </a>
+                        <div class="objects__group">
+                            <span>Продаж</span> | <span>Квартира</span>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--square">64 кв.м.</span>
-                            <span class="indicators__title">Площа</span>
+                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
+                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <!-- INDICATORS start -->
+                        <div class="indicators objects__indicators">
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--rooms">2</span>
+                                <span class="indicators__title">Кімн.</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--square">64 кв.м.</span>
+                                <span class="indicators__title">Площа</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--floor">10/10</span>
+                                <span class="indicators__title">Поверх</span>
+                            </div>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--floor">10/10</span>
-                            <span class="indicators__title">Поверх</span>
+                        <!-- INDICATORS end -->
+                        <div class="objects__actions">
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                подобається
+                            </button>
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                не подобається
+                            </button>
                         </div>
-                    </div>
-                    <!-- INDICATORS end -->
-                    <div class="objects__actions">
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            подобається
-                        </button>
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            не подобається
-                        </button>
                     </div>
                 </li>
                 <li class="objects__item">
-                    <a href="/object/index.html" class="objects__cover-holder">
-                        <img src="/example-object-cover.jpg"
-                             alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
-                             class="objects__cover">
-                        <span class="objects__id">G-1958744</span>
-                        <span class="objects__price">2 141 000 грн</span>
-                    </a>
-                    <div class="objects__group">
-                        <span>Продаж</span> | <span>Квартира</span>
-                    </div>
-                    <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
-                    <span class="objects__area">Лісовий, Деснянський район</span>
-                    <!-- INDICATORS start -->
-                    <div class="indicators objects__indicators">
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--rooms">2</span>
-                            <span class="indicators__title">Кімн.</span>
+                    <div class="objects__layout">
+                        <a href="/object/index.html" class="objects__cover-holder">
+                            <img src="/example-object-cover.jpg"
+                                 alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
+                                 class="objects__cover">
+                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__price">2 141 000 грн</span>
+                        </a>
+                        <div class="objects__group">
+                            <span>Продаж</span> | <span>Квартира</span>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--square">64 кв.м.</span>
-                            <span class="indicators__title">Площа</span>
+                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ</h3>
+                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <!-- INDICATORS start -->
+                        <div class="indicators objects__indicators">
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--rooms">2</span>
+                                <span class="indicators__title">Кімн.</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--square">64 кв.м.</span>
+                                <span class="indicators__title">Площа</span>
+                            </div>
+                            <div class="indicators__item">
+                                <span class="indicators__value indicators__value--floor">10/10</span>
+                                <span class="indicators__title">Поверх</span>
+                            </div>
                         </div>
-                        <div class="indicators__item">
-                            <span class="indicators__value indicators__value--floor">10/10</span>
-                            <span class="indicators__title">Поверх</span>
+                        <!-- INDICATORS end -->
+                        <div class="objects__actions">
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                подобається
+                            </button>
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                не подобається
+                            </button>
                         </div>
-                    </div>
-                    <!-- INDICATORS end -->
-                    <div class="objects__actions">
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            подобається
-                        </button>
-                        <button class="objects__action" type="button">
-                            <svg class="objects__action-icon" viewBox="0 0 1024 1024">
-                                <path d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            не подобається
-                        </button>
                     </div>
                 </li>
             </ul>

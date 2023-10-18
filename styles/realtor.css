@@ -56,10 +56,16 @@
     margin-bottom: 0;
 }
 
+.realtor__messenger:hover .realtor__messenger-icon{
+    transform: scale(0.94);
+    opacity: 0.8;
+}
+
 .realtor__messenger-icon {
     display: block;
     width: 28px;
     height: auto;
+    transition: all 0.4s ease;
 }
 
 

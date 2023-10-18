@@ -14,12 +14,18 @@
     }
 }
 
+.language-switcher:hover .language-switcher__current {
+    transform: scale(0.94);
+    opacity: 0.8;
+}
+
 .language-switcher--active .language-switcher__list {
     display: block;
 }
 
 .language-switcher__current {
     padding: 6px 12px;
+    transition: all 0.4s ease;
 }
 
 .language-switcher__current strong {

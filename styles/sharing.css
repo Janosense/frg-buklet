@@ -7,13 +7,24 @@
     padding: 0;
 }
 
+.sharing__link {
+    transition: all 0.4s ease;
+}
+
+.sharing__link:hover .sharing__icon {
+    transform: scale(0.94);
+    opacity: 0.8;
+}
+
 .sharing__icon {
     display: block;
     width: 32px;
     height: auto;
+    transition: all 0.4s ease;
 }
 
 .sharing__icon--telegram {
     border-radius: 50%;
-    border: 0.5px solid #ffffff;    font-family: 'icomoon';
+    border: 0.5px solid #ffffff;
+    font-family: 'icomoon', sans-serif;
 }

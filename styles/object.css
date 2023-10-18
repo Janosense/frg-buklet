@@ -86,6 +86,11 @@
     }
 }
 
+.object__tour-button:hover {
+    transform: scale(0.94);
+    opacity: 0.8;
+}
+
 .object__tour-button::before {
     content: '';
     display: block;
@@ -124,6 +129,12 @@
     font-size: 26px;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.object__price:hover {
+    transform: scale(1.01);
+
 }
 
 .object__price--active .object__price-dropdown {

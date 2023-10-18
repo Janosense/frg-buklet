@@ -5,15 +5,16 @@ const toggleObjectState = () => {
     if (likeButtons.length && dislikeButtons.length) {
         likeButtons.forEach((likeButton) => {
             likeButton.addEventListener('click', (evt) => {
-                likeButton.parentElement.parentElement.classList.remove('objects__item--dislike');
-                likeButton.parentElement.parentElement.classList.add('objects__item--like');
+                evt.currentTarget.parentElement.parentElement.parentElement.classList.remove('objects__item--dislike');
+                evt.currentTarget.parentElement.parentElement.parentElement.classList.add('objects__item--like');
             });
         });
 
         dislikeButtons.forEach((dislikeButton) => {
             dislikeButton.addEventListener('click', (evt) => {
-                dislikeButton.parentElement.parentElement.classList.remove('objects__item--like');
-                dislikeButton.parentElement.parentElement.classList.add('objects__item--dislike');
+                console.log(evt.currentTarget.parentElement.parentElement.parentElement);
+                evt.currentTarget.parentElement.parentElement.parentElement.classList.remove('objects__item--like');
+                evt.currentTarget.parentElement.parentElement.parentElement.classList.add('objects__item--dislike');
             });
         });
     }
