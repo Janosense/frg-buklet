@@ -5,16 +5,25 @@ const toggleObjectState = () => {
     if (likeButtons.length && dislikeButtons.length) {
         likeButtons.forEach((likeButton) => {
             likeButton.addEventListener('click', (evt) => {
-                evt.currentTarget.parentElement.parentElement.parentElement.classList.remove('objects__item--dislike');
-                evt.currentTarget.parentElement.parentElement.parentElement.classList.add('objects__item--like');
+                const parentElement = evt.currentTarget.parentElement.parentElement.parentElement;
+                if (parentElement.classList.contains('objects__item--like')) {
+                    parentElement.classList.remove('objects__item--like');
+                } else {
+                    parentElement.classList.remove('objects__item--dislike');
+                    parentElement.classList.add('objects__item--like');
+                }
             });
         });
 
         dislikeButtons.forEach((dislikeButton) => {
             dislikeButton.addEventListener('click', (evt) => {
-                console.log(evt.currentTarget.parentElement.parentElement.parentElement);
-                evt.currentTarget.parentElement.parentElement.parentElement.classList.remove('objects__item--like');
-                evt.currentTarget.parentElement.parentElement.parentElement.classList.add('objects__item--dislike');
+                const parentElement = evt.currentTarget.parentElement.parentElement.parentElement;
+                if (parentElement.classList.contains('objects__item--dislike')) {
+                    parentElement.classList.remove('objects__item--dislike');
+                } else {
+                    parentElement.classList.remove('objects__item--like');
+                    parentElement.classList.add('objects__item--dislike');
+                }
             });
         });
     }

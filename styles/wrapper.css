@@ -5,13 +5,8 @@
     margin: auto;
     padding: 0 20px;
     box-sizing: border-box;
-
-
-    @media (min-width: 768px) {
-        padding: 0 40px;
-    }
 }
 
 .wrapper--object {
-    max-width: 1200px;
+    max-width: 1300px;
 }

@@ -4,13 +4,12 @@
 @import "./styles/body.css";
 @import "./styles/main.css";
 @import "./styles/wrapper.css";
+@import "./styles/sharing.css";
 @import "./styles/header.css";
 @import "./styles/footer.css";
 @import "./styles/realtor.css";
+@import "./styles/indicators.css";
+@import "./styles/price-dropdown.css";
 @import "./styles/objects.css";
 @import "./styles/object.css";
-@import "./styles/icon-viber.css";
-@import "./styles/icon-telegram.css";
-@import "./styles/sharing.css";
-@import "./styles/indicators.css";
-@import "./styles/language-switcher.css";
+@import "./styles/switcher.css";

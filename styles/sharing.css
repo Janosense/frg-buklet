@@ -2,9 +2,20 @@
     list-style-type: none;
     display: flex;
     align-items: center;
-    column-gap: 14px;
-    margin: 0;
+    column-gap: 12px;
     padding: 0;
+    margin: 0;
+
+    @media (min-width: 1024px) {
+        column-gap: 14px;
+    }
+}
+
+.sharing__item:hover .sharing__hint {
+    @media (min-width: 1280px) {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .sharing__link {
@@ -18,13 +29,37 @@
 
 .sharing__icon {
     display: block;
-    width: 32px;
+    width: 24px;
     height: auto;
     transition: all 0.4s ease;
+
+    @media (min-width: 1024px) {
+        width: 28px;
+    }
 }
 
-.sharing__icon--telegram {
-    border-radius: 50%;
-    border: 0.5px solid #ffffff;
-    font-family: 'icomoon', sans-serif;
+.sharing__hint {
+    position: absolute;
+    top: 90%;
+    display: block;
+    padding: 4px 6px;
+    background-color: var(--color-white);
+    font-size: 14px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+.sharing__hint::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 8px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-white);
+    transform: rotate(45deg);
 }

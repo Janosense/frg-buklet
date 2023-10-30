@@ -11,15 +11,10 @@
 .main__link-back {
     position: relative;
     display: inline-block;
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
-    margin-left: 20px;
     margin-bottom: 20px;
     transition: opacity 0.4s ease;
-
-    @media (min-width: 768px) {
-        margin-left: 40px;
-    }
 }
 
 .main__link-back:hover {

@@ -1,13 +1,7 @@
 .indicators {
     display: flex;
     align-items: flex-start;
-    column-gap: 12px;
-}
-
-.indicators__item {
-    padding-right: 12px;
-    /*text-align: center;*/
-    border-right: 1px solid #bdbdbd;
+    column-gap: 10px;
 }
 
 .indicators__item:last-child {
@@ -17,17 +11,17 @@
 
 .indicators__value {
     display: flex;
-    align-items: center;
-    column-gap: 6px;
-    margin-bottom: 6px;
-    font-weight: bold;
-    font-size: 17px;
+    align-items: flex-end;
+    min-width: 54px;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .indicators__value::before {
     display: inline-flex;
+    margin-right: 6px;
     font-family: 'icomoon', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1;
 }
 
@@ -48,7 +42,8 @@
 }
 
 .indicators__title {
-    font-size: 15px;
+    margin-left: 2px;
+    font-size: 12px;
     color: var(--color-grey);
 }
 

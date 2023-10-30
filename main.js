@@ -1,7 +1,9 @@
 import './style.css'
 import toggleObjectState from "./modules/toggle-object-state.js";
-import toggleLanguageSwitcher from "./modules/toggle-language-switcher.js";
+import toggleSwitcher from "./modules/toggle-switcher.js";
+import initCurrencySwitcher from "./modules/init-currency-switcher.js";
 
 toggleObjectState();
-toggleLanguageSwitcher();
+toggleSwitcher();
+initCurrencySwitcher();
 
