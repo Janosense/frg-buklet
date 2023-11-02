@@ -16,8 +16,12 @@
 
 .realtor__photo {
     flex-shrink: 0;
-    width: 98px;
+    width: 84px;
     height: auto;
+
+    @media (min-width: 768px) {
+        width: 98px;
+    }
 
 }
 
@@ -25,13 +29,23 @@
     display: block;
     margin-bottom: 12px;
     font-weight: 500;
+    font-size: 16px;
+
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .realtor__phone {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     text-decoration: none;
     color: var(--color-black);
+    font-size: 16px;
+
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .realtor__phone:last-child {
@@ -41,6 +55,11 @@
 .realtor__email {
     text-decoration: none;
     color: var(--color-grey);
+    font-size: 16px;
+
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .realtor__info-row {
@@ -73,9 +92,13 @@
 
 .realtor__messenger-icon {
     display: none;
-    width: 28px;
+    width: 24px;
     height: auto;
     transition: all 0.4s ease;
+
+    @media (min-width: 768px) {
+        width: 28px;
+    }
 }
 
 .realtor__messenger:hover .realtor__messenger-hint {

@@ -42,7 +42,7 @@
 
     & .header__logo--blagovist {
         display: block;
-        width: 130px;
+        width: 120px;
 
         @media (min-width: 1024px) {
             width: 160px;
@@ -58,7 +58,7 @@
 
     & .header__logo--park-lane {
         display: block;
-        width: 150px;
+        width: 128px;
 
         @media (min-width: 1024px) {
             width: 180px;
