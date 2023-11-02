@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Objects</title>
 </head>
-<body class="blagovist">
-<!--<body class="park-lane">-->
+<!--<body class="blagovist">-->
+<body class="park-lane">
 <!-- HEADER start -->
 <header class="header">
     <div class="wrapper header__wrapper">
@@ -75,10 +75,10 @@
 <main class="main">
     <div class="wrapper main__wrapper">
         <!-- REALTOR start -->
-        <div class="realtor">
+        <div class="realtor realtor--home">
             <img src="/example-realtor.jpg" alt="Авдалов Герман Вікторович" class="realtor__photo">
             <div class="realtor__info">
-                <span class="realtor__name">Авдалов Герман</span>
+                <span class="realtor__name">Риелтор</span>
                 <div class="realtor__info-row">
                     <a href="tel:+380669212125" class="realtor__phone">066 921 21 25</a>
                     <!-- IMPORTANT! Use '%2B' instead of '+' -->
@@ -104,6 +104,20 @@
         </div>
         <!-- REALTOR end -->
 
+        <!-- FILTER start -->
+        <div class="filter">
+            <button type="button" class="filter__current">За ціною</button>
+            <ul class="filter__list">
+                <li class="filter__item">
+                    <a href="#" class="filter__link">За рейтингом</a>
+                </li>
+                <li class="filter__item filter__item--current">
+                    <a href="#" class="filter__link">За ціною</a>
+                </li>
+            </ul>
+        </div>
+        <!-- FILTER end -->
+
         <!-- OBJECTS start -->
         <div class="objects">
             <ul class="objects__list">
@@ -113,34 +127,32 @@
                             <img src="/example-object-cover.jpg"
                                  alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
                                  class="objects__cover">
-                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__id">id обʼекту</span>
                             <span class="objects__price price"
-                                  data-price-uah="2 141 000"
-                                  data-price-usd="51 000"
-                                  data-price-eur="49 000">2 141 000 грн</span>
+                                  data-price-uah="ціна"
+                                  data-price-usd="price"
+                                  data-price-eur="price">ціна грн</span>
                         </a>
                         <div class="objects__group">
-                            <span>Продаж</span> | <span>Квартира</span>
+                            Рядок 0
                         </div>
-                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а,
-                            Київ</h3>
-                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <h3 class="objects__title">рядок 1</h3>
+                        <div class="objects__area">
+                            <span class="objects__area-row">рядок 2</span>
+                            <span class="objects__area-row">рядок 3</span>
+                            <span class="objects__area-row">рядок ..</span>
+                            <span class="objects__area-row">рядок N</span>
+                        </div>
                         <!-- INDICATORS start -->
                         <div class="indicators objects__indicators">
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--rooms">2
-                                    <span class="indicators__title">Кімн.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--rooms">Це просто</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--square">64
-                                    <span class="indicators__title">кв.м.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--square">Строки</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--floor">10/10
-                                    <span class="indicators__title">Поверх</span>
-                                </div>
+                                <div class="indicators__value indicators__value--floor">Будь які</div>
                             </div>
                         </div>
                         <!-- INDICATORS end -->
@@ -168,33 +180,32 @@
                             <img src="/example-object-cover.jpg"
                                  alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
                                  class="objects__cover">
-                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__id">id обʼекту</span>
                             <span class="objects__price price"
-                                  data-price-uah="2 141 000"
-                                  data-price-usd="51 000"
-                                  data-price-eur="49 000">2 141 000 грн</span>                        </a>
+                                  data-price-uah="ціна"
+                                  data-price-usd="price"
+                                  data-price-eur="price">ціна грн</span>
+                        </a>
                         <div class="objects__group">
-                            <span>Продаж</span> | <span>Квартира</span>
+                            Рядок 0
                         </div>
-                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а,
-                            Київ</h3>
-                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <h3 class="objects__title">рядок 1</h3>
+                        <div class="objects__area">
+                            <span class="objects__area-row">рядок 2</span>
+                            <span class="objects__area-row">рядок 3</span>
+                            <span class="objects__area-row">рядок ..</span>
+                            <span class="objects__area-row">рядок N</span>
+                        </div>
                         <!-- INDICATORS start -->
                         <div class="indicators objects__indicators">
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--rooms">2
-                                    <span class="indicators__title">Кімн.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--rooms">Це просто</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--square">64
-                                    <span class="indicators__title">кв.м.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--square">Строки</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--floor">10/10
-                                    <span class="indicators__title">Поверх</span>
-                                </div>
+                                <div class="indicators__value indicators__value--floor">Будь які</div>
                             </div>
                         </div>
                         <!-- INDICATORS end -->
@@ -222,34 +233,32 @@
                             <img src="/example-object-cover.jpg"
                                  alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
                                  class="objects__cover">
-                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__id">id обʼекту</span>
                             <span class="objects__price price"
-                                  data-price-uah="2 141 000"
-                                  data-price-usd="51 000"
-                                  data-price-eur="49 000">2 141 000 грн</span>
+                                  data-price-uah="ціна"
+                                  data-price-usd="price"
+                                  data-price-eur="price">ціна грн</span>
                         </a>
                         <div class="objects__group">
-                            <span>Продаж</span> | <span>Квартира</span>
+                            Рядок 0
                         </div>
-                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а,
-                            Київ</h3>
-                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <h3 class="objects__title">рядок 1</h3>
+                        <div class="objects__area">
+                            <span class="objects__area-row">рядок 2</span>
+                            <span class="objects__area-row">рядок 3</span>
+                            <span class="objects__area-row">рядок ..</span>
+                            <span class="objects__area-row">рядок N</span>
+                        </div>
                         <!-- INDICATORS start -->
                         <div class="indicators objects__indicators">
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--rooms">2
-                                    <span class="indicators__title">Кімн.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--rooms">Це просто</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--square">64
-                                    <span class="indicators__title">кв.м.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--square">Строки</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--floor">10/10
-                                    <span class="indicators__title">Поверх</span>
-                                </div>
+                                <div class="indicators__value indicators__value--floor">Будь які</div>
                             </div>
                         </div>
                         <!-- INDICATORS end -->
@@ -277,34 +286,32 @@
                             <img src="/example-object-cover.jpg"
                                  alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
                                  class="objects__cover">
-                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__id">id обʼекту</span>
                             <span class="objects__price price"
-                                  data-price-uah="2 141 000"
-                                  data-price-usd="51 000"
-                                  data-price-eur="49 000">2 141 000 грн</span>
+                                  data-price-uah="ціна"
+                                  data-price-usd="price"
+                                  data-price-eur="price">ціна грн</span>
                         </a>
                         <div class="objects__group">
-                            <span>Продаж</span> | <span>Квартира</span>
+                            Рядок 0
                         </div>
-                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а,
-                            Київ</h3>
-                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <h3 class="objects__title">рядок 1</h3>
+                        <div class="objects__area">
+                            <span class="objects__area-row">рядок 2</span>
+                            <span class="objects__area-row">рядок 3</span>
+                            <span class="objects__area-row">рядок ..</span>
+                            <span class="objects__area-row">рядок N</span>
+                        </div>
                         <!-- INDICATORS start -->
                         <div class="indicators objects__indicators">
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--rooms">2
-                                    <span class="indicators__title">Кімн.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--rooms">Це просто</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--square">64
-                                    <span class="indicators__title">кв.м.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--square">Строки</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--floor">10/10
-                                    <span class="indicators__title">Поверх</span>
-                                </div>
+                                <div class="indicators__value indicators__value--floor">Будь які</div>
                             </div>
                         </div>
                         <!-- INDICATORS end -->
@@ -332,34 +339,32 @@
                             <img src="/example-object-cover.jpg"
                                  alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
                                  class="objects__cover">
-                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__id">id обʼекту</span>
                             <span class="objects__price price"
-                                  data-price-uah="2 141 000"
-                                  data-price-usd="51 000"
-                                  data-price-eur="49 000">2 141 000 грн</span>
+                                  data-price-uah="ціна"
+                                  data-price-usd="price"
+                                  data-price-eur="price">ціна грн</span>
                         </a>
                         <div class="objects__group">
-                            <span>Продаж</span> | <span>Квартира</span>
+                            Рядок 0
                         </div>
-                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а,
-                            Київ</h3>
-                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <h3 class="objects__title">рядок 1</h3>
+                        <div class="objects__area">
+                            <span class="objects__area-row">рядок 2</span>
+                            <span class="objects__area-row">рядок 3</span>
+                            <span class="objects__area-row">рядок ..</span>
+                            <span class="objects__area-row">рядок N</span>
+                        </div>
                         <!-- INDICATORS start -->
                         <div class="indicators objects__indicators">
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--rooms">2
-                                    <span class="indicators__title">Кімн.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--rooms">Це просто</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--square">64
-                                    <span class="indicators__title">кв.м.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--square">Строки</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--floor">10/10
-                                    <span class="indicators__title">Поверх</span>
-                                </div>
+                                <div class="indicators__value indicators__value--floor">Будь які</div>
                             </div>
                         </div>
                         <!-- INDICATORS end -->
@@ -387,34 +392,32 @@
                             <img src="/example-object-cover.jpg"
                                  alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
                                  class="objects__cover">
-                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__id">id обʼекту</span>
                             <span class="objects__price price"
-                                  data-price-uah="2 141 000"
-                                  data-price-usd="51 000"
-                                  data-price-eur="49 000">2 141 000 грн</span>
+                                  data-price-uah="ціна"
+                                  data-price-usd="price"
+                                  data-price-eur="price">ціна грн</span>
                         </a>
                         <div class="objects__group">
-                            <span>Продаж</span> | <span>Квартира</span>
+                            Рядок 0
                         </div>
-                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а,
-                            Київ</h3>
-                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <h3 class="objects__title">рядок 1</h3>
+                        <div class="objects__area">
+                            <span class="objects__area-row">рядок 2</span>
+                            <span class="objects__area-row">рядок 3</span>
+                            <span class="objects__area-row">рядок ..</span>
+                            <span class="objects__area-row">рядок N</span>
+                        </div>
                         <!-- INDICATORS start -->
                         <div class="indicators objects__indicators">
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--rooms">2
-                                    <span class="indicators__title">Кімн.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--rooms">Це просто</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--square">64
-                                    <span class="indicators__title">кв.м.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--square">Строки</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--floor">10/10
-                                    <span class="indicators__title">Поверх</span>
-                                </div>
+                                <div class="indicators__value indicators__value--floor">Будь які</div>
                             </div>
                         </div>
                         <!-- INDICATORS end -->
@@ -442,34 +445,32 @@
                             <img src="/example-object-cover.jpg"
                                  alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
                                  class="objects__cover">
-                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__id">id обʼекту</span>
                             <span class="objects__price price"
-                                  data-price-uah="2 141 000"
-                                  data-price-usd="51 000"
-                                  data-price-eur="49 000">2 141 000 грн</span>
+                                  data-price-uah="ціна"
+                                  data-price-usd="price"
+                                  data-price-eur="price">ціна грн</span>
                         </a>
                         <div class="objects__group">
-                            <span>Продаж</span> | <span>Квартира</span>
+                            Рядок 0
                         </div>
-                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а,
-                            Київ</h3>
-                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <h3 class="objects__title">рядок 1</h3>
+                        <div class="objects__area">
+                            <span class="objects__area-row">рядок 2</span>
+                            <span class="objects__area-row">рядок 3</span>
+                            <span class="objects__area-row">рядок ..</span>
+                            <span class="objects__area-row">рядок N</span>
+                        </div>
                         <!-- INDICATORS start -->
                         <div class="indicators objects__indicators">
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--rooms">2
-                                    <span class="indicators__title">Кімн.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--rooms">Це просто</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--square">64
-                                    <span class="indicators__title">кв.м.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--square">Строки</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--floor">10/10
-                                    <span class="indicators__title">Поверх</span>
-                                </div>
+                                <div class="indicators__value indicators__value--floor">Будь які</div>
                             </div>
                         </div>
                         <!-- INDICATORS end -->
@@ -497,34 +498,32 @@
                             <img src="/example-object-cover.jpg"
                                  alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
                                  class="objects__cover">
-                            <span class="objects__id">G-1958744</span>
+                            <span class="objects__id">id обʼекту</span>
                             <span class="objects__price price"
-                                  data-price-uah="2 141 000"
-                                  data-price-usd="51 000"
-                                  data-price-eur="49 000">2 141 000 грн</span>
+                                  data-price-uah="ціна"
+                                  data-price-usd="price"
+                                  data-price-eur="price">ціна грн</span>
                         </a>
                         <div class="objects__group">
-                            <span>Продаж</span> | <span>Квартира</span>
+                            Рядок 0
                         </div>
-                        <h3 class="objects__title">2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а,
-                            Київ</h3>
-                        <span class="objects__area">Лісовий, Деснянський район</span>
+                        <h3 class="objects__title">рядок 1</h3>
+                        <div class="objects__area">
+                            <span class="objects__area-row">рядок 2</span>
+                            <span class="objects__area-row">рядок 3</span>
+                            <span class="objects__area-row">рядок ..</span>
+                            <span class="objects__area-row">рядок N</span>
+                        </div>
                         <!-- INDICATORS start -->
                         <div class="indicators objects__indicators">
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--rooms">2
-                                    <span class="indicators__title">Кімн.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--rooms">Це просто</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--square">64
-                                    <span class="indicators__title">кв.м.</span>
-                                </div>
+                                <div class="indicators__value indicators__value--square">Строки</div>
                             </div>
                             <div class="indicators__item">
-                                <div class="indicators__value indicators__value--floor">10/10
-                                    <span class="indicators__title">Поверх</span>
-                                </div>
+                                <div class="indicators__value indicators__value--floor">Будь які</div>
                             </div>
                         </div>
                         <!-- INDICATORS end -->
@@ -546,6 +545,60 @@
                         </div>
                     </div>
                 </li>
+                <li class="objects__item" id="object-22">
+                    <div class="objects__layout">
+                        <a href="/object/index.html#object-22" class="objects__cover-holder">
+                            <img src="/example-object-cover.jpg"
+                                 alt="2-кiм. квартира, вул. Кубанської України (Жукова Маршала), 24а, Київ"
+                                 class="objects__cover">
+                            <span class="objects__id">id обʼекту</span>
+                            <span class="objects__price price"
+                                  data-price-uah="ціна"
+                                  data-price-usd="price"
+                                  data-price-eur="price">ціна грн</span>
+                        </a>
+                        <div class="objects__group">
+                            Рядок 0
+                        </div>
+                        <h3 class="objects__title">рядок 1</h3>
+                        <div class="objects__area">
+                            <span class="objects__area-row">рядок 2</span>
+                            <span class="objects__area-row">рядок 3</span>
+                            <span class="objects__area-row">рядок ..</span>
+                            <span class="objects__area-row">рядок N</span>
+                        </div>
+                        <!-- INDICATORS start -->
+                        <div class="indicators objects__indicators">
+                            <div class="indicators__item">
+                                <div class="indicators__value indicators__value--rooms">Це просто</div>
+                            </div>
+                            <div class="indicators__item">
+                                <div class="indicators__value indicators__value--square">Строки</div>
+                            </div>
+                            <div class="indicators__item">
+                                <div class="indicators__value indicators__value--floor">Будь які</div>
+                            </div>
+                        </div>
+                        <!-- INDICATORS end -->
+                        <div class="objects__actions">
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path
+                                        d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                <span class="objects__action-hint">Подобається</span>
+                            </button>
+                            <button class="objects__action" type="button">
+                                <svg class="objects__action-icon" viewBox="0 0 1024 1024">
+                                    <path
+                                        d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                                </svg>
+                                <span class="objects__action-hint">Не подобається</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
             </ul>
         </div>
         <!-- OBJECTS end -->

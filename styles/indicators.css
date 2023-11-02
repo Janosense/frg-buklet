@@ -11,18 +11,19 @@
 
 .indicators__value {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     min-width: 54px;
-    font-weight: 500;
     font-size: 15px;
+    line-height: 1;
 }
 
 .indicators__value::before {
     display: inline-flex;
     margin-right: 6px;
     font-family: 'icomoon', sans-serif;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 1;
+    font-weight: bold;
 }
 
 .indicators__value--rooms::before {

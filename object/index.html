@@ -75,73 +75,73 @@
 <!-- MAIN start -->
 <main class="main">
     <div class="wrapper wrapper--object main__wrapper">
-        <a href="#" class="main__link-back">Повернутись до списку обʼєктів</a>
+        <a href="http://localhost:5173/" class="main__link-back">Повернутись до списку обʼєктів</a>
         <!-- OBJECT start -->
         <div class="object">
             <div class="object__screen object__screen--first">
                 <div class="object__layout">
                     <div class="object__cover-holder">
                         <img src="/example-object-cover.jpg" alt="" class="object__cover">
-                        <span class="object__id">G-1958744</span>
+                        <span class="object__id">ID обʼєкту</span>
                     </div>
                     <div class="object__tours">
-                        <a href="/example-object-image-2.jpg" class="glightbox object__tour-button">
-                            3D тур
+                        <a href="https://parklane.ua/sites/parklane.ua/files/virtual/J-34972/TourWeaver_J-34972.html" class="glightbox object__tour-button">
+                            Кнопка 1
                         </a>
                         <a href="/example-object-image-2.jpg" data-type="video" class="glightbox object__tour-button">
-                            Відео тур
+                            Кнопка N
                         </a>
                     </div>
                 </div>
                 <div class="object__layout">
                     <div class="object__group">
-                        <span>Продаж</span> | <span>Квартира</span>
+                        <span>Рядок 0</span>
                     </div>
                     <p class="object__address">
-                        <span>Троєщина, Деснянський район, Київ</span>
-                        <span>вул. Закревського М. 89</span>
+                        <span class="object__address-row">Рядок 1</span>
+                        <span class="object__address-row">Рядок 2</span>
+                        <span class="object__address-row">Рядок 3</span>
+                        <span class="object__address-row">...</span>
+                        <span class="object__address-row">Рядок N</span>
                     </p>
-                    <span class="object__complex">ЖК Victory estate</span>
+                    <span class="object__complex">Назва ЖК</span>
                     <!-- INDICATORS start -->
                     <div class="indicators object__indicators">
                         <div class="indicators__item">
-                            <div class="indicators__value indicators__value--rooms">2
-                                <span class="indicators__title">Кімн.</span>
+                            <div class="indicators__value indicators__value--rooms">Це просто
                             </div>
                         </div>
                         <div class="indicators__item">
-                            <div class="indicators__value indicators__value--square">64
-                                <span class="indicators__title">кв.м.</span>
+                            <div class="indicators__value indicators__value--square">Строки
                             </div>
                         </div>
                         <div class="indicators__item">
-                            <div class="indicators__value indicators__value--floor">10/10
-                                <span class="indicators__title">Поверх</span>
+                            <div class="indicators__value indicators__value--floor">Будь які
                             </div>
                         </div>
                     </div>
                     <!-- INDICATORS end -->
                     <div class="object__price-holder">
-                        <div class="price"
-                             data-price-uah="2 141 000"
-                             data-price-usd="51 000"
-                             data-price-eur="49 000">2 141 000 грн
+                        <div class="price object__price"
+                             data-price-uah="цінa"
+                             data-price-usd="price"
+                             data-price-eur="price">2 123 4922 грн
                         </div>
-                        <div class="object__unit-price">
+                        <div class="object__price-unit">
                             <span class="price"
-                                  data-price-uah="3 290"
-                                  data-price-usd="90"
-                                  data-price-eur="88">3 290 грн</span>/м<sup>2</sup>
+                                  data-price-uah="цінa"
+                                  data-price-usd="price"
+                                  data-price-eur="price">ціна грн</span>/м<sup>2</sup>
                         </div>
                         <div class="price-dropdown object__price-dropdown">
                             <div class="price-dropdown__item price-dropdown__item--uah price-dropdown__item--current">
-                                <span>2 141 000 грн</span> <span class="object__unit-price">3 290 грн/м<sup>2</sup></span>
+                                <span>цінa грн</span> <span class="object__unit-price">цінa грн/м<sup>2</sup></span>
                             </div>
                             <div class="price-dropdown__item price-dropdown__item--usd">
-                                <span>51 000 $</span> <span class="object__unit-price">90 $/м<sup>2</sup></span>
+                                <span>price $</span> <span class="object__unit-price">price $/м<sup>2</sup></span>
                             </div>
                             <div class="price-dropdown__item price-dropdown__item--eur">
-                                <span>49 000 Є</span> <span class="object__unit-price">88 Є/м<sup>2</sup></span>
+                                <span>price Є</span> <span class="object__unit-price">price Є/м<sup>2</sup></span>
                             </div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                     <div class="realtor">
                         <img src="/example-realtor.jpg" alt="Авдалов Герман Вікторович" class="realtor__photo">
                         <div class="realtor__info">
-                            <span class="realtor__name">Авдалов Герман</span>
+                            <span class="realtor__name">Риелтор</span>
                             <div class="realtor__info-row">
                                 <a href="tel:+380669212125" class="realtor__phone">066 921 21 25</a>
                                 <!-- IMPORTANT! Use '%2B' instead of '+' -->
@@ -174,6 +174,23 @@
                         </div>
                     </div>
                     <!-- REALTOR end -->
+
+                    <div class="object__actions">
+                        <button class="object__action object__action--like" type="button">
+                            <svg class="object__action-icon" viewBox="0 0 1024 1024">
+                                <path
+                                    d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                            </svg>
+                            <span class="object__action-hint">Подобається</span>
+                        </button>
+                        <button class="object__action object__action--dislike" type="button">
+                            <svg class="object__action-icon" viewBox="0 0 1024 1024">
+                                <path
+                                    d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                            </svg>
+                            <span class="object__action-hint">Не подобається</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="object__screen">
@@ -182,19 +199,21 @@
                          class="object__sub-title-icon object__sub-title-icon--blagovist">
                     <img src="/icon@pl-additional-info.svg" alt="Додаткова інформація"
                          class="object__sub-title-icon object__sub-title-icon--park-lane">
-                    Додаткова інформація
+                    Заголовок 1
                 </h2>
                 <div class="object__description">
                     <div class="object__description-text">
-                        <p>Шикарна, мебльована квартира з дорогим ремонтом + паркінг 2 місця (виведено 220v і 380v!
-                            Італійська плитка, швейцарська сантехніка, 2 с/у, двері з дерева, дорога паркетна дошка,
-                            утеплена, підігрів підлог, 2 бойлери, led освітлення, натяжні стелі, камін, поверхні з
-                            каменю.
-                            вся техніка (холодильник, посудомийна машина, варильна поверхня, мікрохвильова піч та тд),
-                            меблі
-                            з натурального дерева, дивани blest, dizi, відеодомофон, відеоспостереження, сигналізація,
-                            сейф</p>
-                        <p>Поблизу вся необхідна інфраструктура</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec leo vel nisi rutrum
+                            condimentum eget ultricies lorem. Aliquam et dignissim leo. Ut est libero, ornare accumsan
+                            imperdiet venenatis, suscipit eu justo. Maecenas at viverra quam, quis volutpat nibh. Morbi
+                            metus urna, rhoncus vel hendrerit nec, pharetra non eros. Mauris nec tellus aliquet,
+                            faucibus lectus ut, tincidunt quam. Maecenas posuere risus dolor, sed dignissim magna cursus
+                            eu.
+                        </p>
+                        <p>
+                            Ut porttitor quam quis massa aliquam vehicula vel eu dolor. Cras vel tellus quam. Nunc
+                            ut dignissim elit. Aenean efficitur rutrum euismod.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -204,7 +223,7 @@
                          class="object__sub-title-icon object__sub-title-icon--blagovist">
                     <img src="/icon@pl-photo.svg" alt="Фотографії"
                          class="object__sub-title-icon object__sub-title-icon--park-lane">
-                    Фотографії
+                    Заголовок 2
                 </h2>
                 <div class="object__images">
                     <a href="/example-object-image-1.jpg" class="glightbox object__image-holder"
@@ -231,10 +250,10 @@
                          class="object__sub-title-icon object__sub-title-icon--blagovist">
                     <img src="/icon@pl-plan.svg" alt="План приміщень"
                          class="object__sub-title-icon object__sub-title-icon--park-lane">
-                    План приміщень
+                    Заголовок 3
                 </h2>
                 <a href="/example-object-image-2.jpg" data-type="video" class="glightbox object__tour-button">
-                    Відео тур
+                    Кнопка якої може і не бути
                 </a>
                 <div class="object__images">
                     <a href="/example-object-image-2.jpg" class="glightbox object__image-holder"
@@ -253,34 +272,33 @@
                          class="object__sub-title-icon object__sub-title-icon--blagovist">
                     <img src="/icon@pl-tower-description.svg" alt="Опис будівлі"
                          class="object__sub-title-icon object__sub-title-icon--park-lane">
-                    Опис будівлі
+                    Заголовок ...
                 </h2>
                 <a href="/example-object-image-2.jpg" data-type="video" class="glightbox object__tour-button">
-                    Відео тур
+                    Кнопка N
                 </a>
                 <div class="object__description">
-                    <p>
-                        Будинок 2010 року, фасад повністю утеплений мінватою, у дворі, гарний стан, Н=2.75 м, ліфт
-                        "Отіс", під'їзди охайні, консьєрж, кодовий замок, комплекс з власною інфраструктурою, свій
-                        ЖЕК,
-                        діагностичний центр, парковка безкоштовна, підземний паркінг
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec leo vel nisi rutrum
+                        condimentum eget ultricies lorem. Aliquam et dignissim leo. Ut est libero, ornare accumsan
+                        imperdiet venenatis, suscipit eu justo. Maecenas at viverra quam, quis volutpat nibh. Morbi
+                        metus urna, rhoncus vel hendrerit nec, pharetra non eros. Mauris nec tellus aliquet,
+                        faucibus lectus ut, tincidunt quam. Maecenas posuere risus dolor, sed dignissim magna cursus
+                        eu.
                     </p>
                     <p>
-                        Магазин "Леруа Мерлен",
-                        "Епіцентр", продуктові супермаркети, ринок, 2 поверхи нежитлові: дитяча студія розвитку
-                        дитини,
-                        стоматологія, салон краси, хімчистка, озеро, ст.М"Мінська"- 3 зупинки маршрутним таксі
+                        Ut porttitor quam quis massa aliquam vehicula vel eu dolor. Cras vel tellus quam. Nunc
+                        ut dignissim elit. Aenean efficitur rutrum euismod.
                     </p>
                 </div>
             </div>
             <div class="object__screen">
-                <h2 class="object__sub-title">Фасад</h2>
-                <div class="object__images">
-                    <a href="/example-object-cover.jpg" class="glightbox object__image-holder" data-gallery="gallery-3">
-                        <img src="/example-object-cover.jpg" alt="image" class="object__image">
+                <h2 class="object__sub-title">Заголовок N</h2>
+                <div class="object__images object__images--plans">
+                    <a href="/plan-1.jpg" class="glightbox object__image-holder" data-gallery="gallery-3">
+                        <img src="/plan-1.jpg" alt="image" class="object__image">
                     </a>
-                    <a href="/example-object-cover.jpg" class="glightbox object__image-holder" data-gallery="gallery-3">
-                        <img src="/example-object-cover.jpg" alt="image" class="object__image">
+                    <a href="/plan-2.jpg" class="glightbox object__image-holder" data-gallery="gallery-3">
+                        <img src="/plan-2.jpg" alt="image" class="object__image">
                     </a>
                 </div>
             </div>

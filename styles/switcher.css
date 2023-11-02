@@ -23,6 +23,14 @@
     transition: all 0.4s ease;
     border-bottom: 1px dashed var(--color-white);
     font-size: 16px;
+
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 22px;
+    }
 }
 
 .switcher__current strong {
@@ -32,13 +40,13 @@
 .switcher__list {
     list-style-type: none;
     position: absolute;
-    left: calc(50% - 25px);
+    left: calc(50% - 27px);
     top: calc(100% - 1px);
     z-index: 1;
     display: none;
-    width: 50px;
+    width: 54px;
     margin: 0;
-    padding: 10px 0;
+    padding: 12px 0;
     box-sizing: border-box;
     background-color: var(--color-white);
 }
@@ -55,7 +63,7 @@
 }
 
 .switcher__item {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     text-align: center;
 }
 
@@ -70,6 +78,7 @@
 .switcher__link {
     text-decoration: none;
     font-weight: 500;
+    font-size: 18px;
 }
 
 .blagovist {
