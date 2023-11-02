@@ -27,7 +27,6 @@
     font-size: 16px;
     border: none;
     background-color: var(--color-white);
-    color: var(--color-purple);
     cursor: pointer;
 }
 
@@ -74,4 +73,17 @@
     font-size: 16px;
     color: var(--color-black);
     text-decoration: none;
+}
+
+.blagovist {
+    & .filter__current {
+        color: var(--color-blue);
+    }
+}
+
+
+.park-lane {
+    & .filter__current {
+        color: var(--color-purple);
+    }
 }
