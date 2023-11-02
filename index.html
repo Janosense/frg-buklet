@@ -611,9 +611,21 @@
     <div class="wrapper footer__wrapper">
         <p class="footer__copy footer__copy--park-lane">Агентство нерухомості Park Lane © 2006-2023</p>
         <p class="footer__copy footer__copy--blagovist">© Агентство нерухомості «БЛАГОВІСТ», 1993—2023</p>
+        <span class="agency-toggle" style="cursor:pointer;">Перемкнути агенство</span>
     </div>
 </footer>
 <!-- FOOTER end -->
+
+<script>
+    const agencyToggle = document.querySelector('.agency-toggle');
+    if (agencyToggle) {
+        agencyToggle.addEventListener('click', (evt) => {
+            document.body.classList.toggle('blagovist');
+            document.body.classList.toggle('park-lane');
+        });
+    }
+</script>
+
 <script type="module" src="/main.js"></script>
 </body>
 </html>
