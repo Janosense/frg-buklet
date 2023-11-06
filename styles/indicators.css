@@ -12,7 +12,7 @@
 .indicators__value {
     display: flex;
     align-items: center;
-    min-width: 54px;
+    min-width: 32px;
     font-size: 15px;
     line-height: 1;
 }
