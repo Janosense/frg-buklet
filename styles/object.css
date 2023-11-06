@@ -292,7 +292,7 @@
     display: flex;
     align-items: center;
     column-gap: 32px;
-    padding-top: 32px;
+    margin-bottom: 24px;
 }
 
 .object__action {
@@ -438,5 +438,9 @@
 
     & .object__action-hint::before {
         background-color: var(--color-purple);
+    }
+
+    & .object__action--active.object__action--like .object__action-icon {
+        fill: var(--color-purple);
     }
 }

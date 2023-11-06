@@ -43,10 +43,13 @@
             <div class="switcher__current"><strong>UA</strong></div>
             <ul class="switcher__list">
                 <li class="switcher__item">
-                    <a href="#" class="switcher__link">ENG</a>
+                    <a href="#eng" class="switcher__link">ENG</a>
                 </li>
                 <li class="switcher__item">
-                    <a href="#" class="switcher__link">RU</a>
+                    <a href="#ru" class="switcher__link">RU</a>
+                </li>
+                <li class="switcher__item switcher__item--current">
+                    <a href="#ua" class="switcher__link">UA</a>
                 </li>
             </ul>
         </div>
@@ -95,6 +98,22 @@
                     </div>
                 </div>
                 <div class="object__layout">
+                    <div class="object__actions">
+                        <button class="object__action object__action--like" type="button">
+                            <svg class="object__action-icon" viewBox="0 0 1024 1024">
+                                <path
+                                    d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                            </svg>
+                            <span class="object__action-hint">Подобається</span>
+                        </button>
+                        <button class="object__action object__action--dislike" type="button">
+                            <svg class="object__action-icon" viewBox="0 0 1024 1024">
+                                <path
+                                    d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
+                            </svg>
+                            <span class="object__action-hint">Не подобається</span>
+                        </button>
+                    </div>
                     <div class="object__group">
                         <span>Продаж | Квартира</span>
                     </div>
@@ -106,7 +125,7 @@
                     <!-- INDICATORS start -->
                     <div class="indicators object__indicators">
                         <div class="indicators__item">
-                            <div class="indicators__value indicators__value--rooms">1
+                            <div class="indicators__value indicators__value--rooms">1 кім.
                             </div>
                         </div>
                         <div class="indicators__item">
@@ -133,7 +152,8 @@
                         </div>
                         <div class="price-dropdown object__price-dropdown">
                             <div class="price-dropdown__item price-dropdown__item--uah price-dropdown__item--current">
-                                <span>2 813 000 грн</span> <span class="object__unit-price">8000 грн/м<sup>2</sup></span>
+                                <span>2 813 000 грн</span> <span
+                                class="object__unit-price">8000 грн/м<sup>2</sup></span>
                             </div>
                             <div class="price-dropdown__item price-dropdown__item--usd">
                                 <span>75 000 $</span> <span class="object__unit-price">200 $/м<sup>2</sup></span>
@@ -172,23 +192,6 @@
                         </div>
                     </div>
                     <!-- REALTOR end -->
-
-                    <div class="object__actions">
-                        <button class="object__action object__action--like" type="button">
-                            <svg class="object__action-icon" viewBox="0 0 1024 1024">
-                                <path
-                                    d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            <span class="object__action-hint">Подобається</span>
-                        </button>
-                        <button class="object__action object__action--dislike" type="button">
-                            <svg class="object__action-icon" viewBox="0 0 1024 1024">
-                                <path
-                                    d="M939.516933 410.236936H666.879976C772.478959 19.839997 591.998988 0 591.998988 0c-73.598989 0-58.239991 59.519991-63.99999 69.759989 0 191.99797-202.877968 340.476947-202.877969 340.476947v541.436915c0 53.119992 74.879988 72.319989 101.759984 72.319989h409.596936c38.399994 0 69.759989-101.119984 69.759989-101.119984 101.118984-344.957946 101.118984-447.99693 101.118985-447.99693a63.99999 63.99999 0 0 0-68.47999-63.99999z m-725.754886 0H49.922072a33.279995 33.279995 0 0 0-33.918995 33.279995l33.919995 545.916914a33.919995 33.919995 0 0 0 34.559995 34.559995h141.438978c29.439995 0 29.439995-23.039996 29.439995-23.039996V451.836929a40.319994 40.319994 0 0 0-41.599993-41.599993z"/>
-                            </svg>
-                            <span class="object__action-hint">Не подобається</span>
-                        </button>
-                    </div>
                 </div>
             </div>
             <div class="object__screen">
@@ -244,12 +247,33 @@
             </div>
             <div class="object__screen">
                 <h2 class="object__sub-title">
+                    <img src="/icon@bl-plan.svg" alt="План приміщень"
+                         class="object__sub-title-icon object__sub-title-icon--blagovist">
+                    <img src="/icon@pl-plan.svg" alt="План приміщень"
+                         class="object__sub-title-icon object__sub-title-icon--park-lane">
+                    План приміщень
+                </h2>
+                <div class="object__images object__images--plans">
+                    <a href="/plan-1.jpg" class="glightbox object__image-holder" data-gallery="gallery-3">
+                        <img src="/plan-1.jpg" alt="image" class="object__image">
+                    </a>
+                    <a href="/plan-2.jpg" class="glightbox object__image-holder" data-gallery="gallery-3">
+                        <img src="/plan-2.jpg" alt="image" class="object__image">
+                    </a>
+                </div>
+            </div>
+            <div class="object__screen">
+                <h2 class="object__sub-title">
                     <img src="/icon@bl-tower-description.svg" alt="Опис будівлі"
                          class="object__sub-title-icon object__sub-title-icon--blagovist">
                     <img src="/icon@pl-tower-description.svg" alt="Опис будівлі"
                          class="object__sub-title-icon object__sub-title-icon--park-lane">
                     Опис будівлі
                 </h2>
+                <a href="https://parklane.ua/sites/parklane.ua/files/virtual/J-34972/TourWeaver_J-34972.html"
+                   class="glightbox object__tour-button">
+                    ЖК PArk City
+                </a>
                 <div class="object__description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec leo vel nisi rutrum
                         condimentum eget ultricies lorem. Aliquam et dignissim leo. Ut est libero, ornare accumsan
@@ -266,18 +290,16 @@
             </div>
             <div class="object__screen">
                 <h2 class="object__sub-title">
-                    <img src="/icon@bl-plan.svg" alt="План приміщень"
-                         class="object__sub-title-icon object__sub-title-icon--blagovist">
-                    <img src="/icon@pl-plan.svg" alt="План приміщень"
-                         class="object__sub-title-icon object__sub-title-icon--park-lane">
-                    План приміщень
+                    Фасад
                 </h2>
-                <div class="object__images object__images--plans">
-                    <a href="/plan-1.jpg" class="glightbox object__image-holder" data-gallery="gallery-3">
-                        <img src="/plan-1.jpg" alt="image" class="object__image">
+                <div class="object__images">
+                    <a href="/example-object-image-1.jpg" class="glightbox object__image-holder"
+                       data-gallery="gallery-1">
+                        <img src="/example-object-image-1.jpg" alt="image" class="object__image">
                     </a>
-                    <a href="/plan-2.jpg" class="glightbox object__image-holder" data-gallery="gallery-3">
-                        <img src="/plan-2.jpg" alt="image" class="object__image">
+                    <a href="/example-object-image-2.jpg" class="glightbox object__image-holder"
+                       data-gallery="gallery-1">
+                        <img src="/example-object-image-2.jpg" alt="image" class="object__image">
                     </a>
                 </div>
             </div>
