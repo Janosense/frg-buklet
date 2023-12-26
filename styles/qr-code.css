@@ -1,0 +1,12 @@
+.qr-code {
+    display: block;
+}
+
+.qr-code--right {
+    margin-left: auto;
+}
+
+.qr-code--center {
+    margin: auto;
+}
+
