@@ -121,7 +121,10 @@
 
 .objects__area-holder {
     margin-bottom: 24px;
-    height: 48px;
+
+    @media (min-width: 768px) {
+        height: 48px;
+    }
 }
 
 .objects__area {
